@@ -22,4 +22,5 @@ from hello import views
 urlpatterns = [
     path("hello/", views.index),
     path('admin/', admin.site.urls),
-]
+    path('hello/<int:question_id>/', views.detail),
+    ]
